@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kanit:wght@500&family=Lato&family=Montserrat:wght@300&family=Open+Sans&family=Roboto:wght@900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sauce {
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.main-image {
+    height: 60vh;
+}
+
+.main-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sneakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 100px 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05, 1.05);
+}
+
+/* botao de compras */
+.btn-2 {
+    padding: 10px 30px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: #370f53;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    transition: 1s;
+    background-color: #8558a5;
+    color: #fff;
+}
+
+.button0-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cash {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    .nav-list {
+      top: 13%;
+    }
+}

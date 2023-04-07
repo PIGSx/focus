@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 600px;
+    margin: 10px auto;
+    position: relative;
+    padding: 5px 0;
+}
+
+main header {
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #370f53;
+}
+
+header p span {
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+header p span:hover {
+    background: #222;
+    color: white;
+}
+
+section {
+    width: 98%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+section .product-supply {
+    min-width: 30%;
+    background: whitesmoke;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+picture {
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.detail {
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-size: 12px;
+    color: #444;
+}
+
+@media screen and (max-width: 768px) {
+    section .product-supply {
+        min-width: 90%;
+    }
+}

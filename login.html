@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
+    <title>Acesse sua conta</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <header>
+        <nav>
+            <a class="logo" href="index.html">
+                <img class="logo-drope" src="img/png/focus.png" alt="" width="100px" height="100px">
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="index.html#destaque">Novidades</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li class="log"><a href="login.html">Login</a></li>
+            </ul>
+            <ul class="nav-login">
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="js/menu.js"></script>
+    <!-- area de login -->
+    <div class="container">
+        <div class="gid-log">
+            <h2>acesse sua conta</h2>
+            <form action="index.html" method="post">
+                <div class="entry">
+                    <input type="text" id="nome" placeholder="nome">
+                </div>
+                <div class="entry">
+                    <input type="password" id="password" placeholder="senha">
+                    <img id="eyeSvg" onclick="eyeClick()" width="22px" src="img/eye-open.svg" alt="">
+                </div>
+                <div class="center">
+                    <button>entrar</button>
+                </div>
+            </form>
+            <div class="links">
+                <a href="#">
+                    <p>esqueceu a senha?</p>
+                </a>
+                <a href="formulario.php">
+                    <p>criar uma conta.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+   <!-- rodapé -->
+   <footer>
+    <h1 id="sobre"></h1>
+    <img class="logo-drope" src="img/png/focus.png" alt="" width="100px" height="100px">
+    <div class="services">
+      <div class="service">
+        <h3>Atitude nos pés que faça você recusar o resto.</h3>
+        <p>A FoCus oferece uma ampla variedade de programas educacionais acessíveis a qualquer hora e em qualquer lugar, 
+            permitindo que os alunos aprendam no seu próprio ritmo.</p>
+      </div>
+      <div class="service">
+        <h3>siga a FoCus</h3>
+        <a href="https://www.instagram.com/x.pigs/"><ion-icon class="icons" name="logo-instagram"></ion-icon></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5511910249696&text=Ol%C3%A1,%20gostaria%20de%20tirar%20uma%20duvida%20">
+          <ion-icon class="icons" name="logo-whatsapp"></ion-icon></a>
+      </div>
+    </div>
+    <!-- importação dos icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </footer>
+</body>
+
+</html>

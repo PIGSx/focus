@@ -1,0 +1,126 @@
+/* intro */
+
+.fullpage {
+    min-height: 60%;
+}
+
+.intro {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 15px;
+}
+
+.grids {
+    padding: 30px;
+}
+
+.grid-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* painel */
+
+.container {
+    display: flex;
+    width: 40vw;
+}
+
+.painel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 6px;
+    transition: flex 0.7s ease-in;
+}
+
+.painel.active {
+    flex: 6;
+}
+
+
+/* instagram da loja */
+
+.destaque {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #23232e;
+    color: white;
+    height: 25vh;
+    align-items: center;
+}
+
+.news {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* botao */
+
+.btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: #370f53;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: #8558a5;
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* acessorios */
+
+.supply-text {
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.coming {
+    color: #444;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .destaque {
+        height: 30%;
+    }
+    .news-text {
+        font-size: 15px;
+    }
+    footer {
+        padding: 30px;
+    }
+}
